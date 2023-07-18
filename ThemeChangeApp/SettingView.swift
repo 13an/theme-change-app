@@ -12,25 +12,38 @@ struct SettingView: View {
     @Binding var colorTheme: ColorTheme
 
     var body: some View {
-        VStack {
-            Picker("Color Theme", selection: $colorTheme) {
-                Text("Light").tag(ColorTheme.mono)
-                Text("Dark").tag(ColorTheme.orange)
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
+        NavigationView {
+            VStack {
+                List {
+                    Section("Color Theme") {
+                        Picker("Color Theme", selection: $colorTheme) {
+                            Text("Mono").tag(ColorTheme.mono)
+                            Text("Orange").tag(ColorTheme.orange)
+                            Text("Terminal").tag(ColorTheme.terminal)
 
-            Spacer()
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .padding()
+                    }
+                    .listRowBackground(colorTheme.surface_1)
+                    .foregroundColor(colorTheme.text_base_2)
+                }
+                .scrollContentBackground(.hidden)
+                
+                Spacer()
 
-            Button(action: {
-                presentationMode.wrappedValue.dismiss()
-            }) {
-                Text("Close")
-                    .foregroundColor(.blue)
-                    .padding()
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("Close")
+                        .foregroundColor(colorTheme.text_accent_1)
+                        .padding()
+                }
             }
+            .background(colorTheme.background_1)
+            .navigationTitle("Setting")
+            .toolbarBackground(colorTheme.background_1, for: .navigationBar)
         }
-        .background(colorTheme.background_1)
     }
 }
 
@@ -38,6 +51,6 @@ struct SettingView: View {
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView(colorTheme: .constant(.mono))
+        SettingView(colorTheme: .constant(.terminal))
     }
 }

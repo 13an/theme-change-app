@@ -31,13 +31,10 @@ extension Color {
     static let text_accent_1_mono = Color("text_accent_1_mono")
     static let text_accent_1_orange = Color("text_accent_1_orange")
     static let text_accent_1_terminal = Color("text_accent_1_terminal")
-
-
-    static let surfaceColor = Color("SurfaceColor")
 }
 
 enum ColorTheme {
-    case mono, orange
+    case mono, orange, terminal
 
     var background_1: Color {
         switch self {
@@ -45,6 +42,8 @@ enum ColorTheme {
             return Color.background_1_mono
         case .orange:
             return Color.background_1_orange
+        case .terminal:
+            return Color.background_1_terminal
         }
     }
     
@@ -54,6 +53,8 @@ enum ColorTheme {
             return Color.surface_1_mono
         case .orange:
             return Color.surface_1_orange
+        case .terminal:
+            return Color.surface_1_terminal
         }
     }
 
@@ -63,6 +64,8 @@ enum ColorTheme {
             return Color.text_base_1_mono
         case .orange:
             return Color.text_base_1_orange
+        case .terminal:
+            return Color.text_base_1_terminal
         }
     }
     
@@ -72,6 +75,8 @@ enum ColorTheme {
             return Color.text_base_2_mono
         case .orange:
             return Color.text_base_2_orange
+        case .terminal:
+            return Color.text_base_2_terminal
         }
     }
     
@@ -81,6 +86,19 @@ enum ColorTheme {
             return Color.text_base_3_mono
         case .orange:
             return Color.text_base_3_orange
+        case .terminal:
+            return Color.text_base_3_terminal
+        }
+    }
+    
+    var text_accent_1: Color {
+        switch self {
+        case .mono:
+            return Color.text_accent_1_mono
+        case .orange:
+            return Color.text_accent_1_orange
+        case .terminal:
+            return Color.text_accent_1_terminal
         }
     }
 }

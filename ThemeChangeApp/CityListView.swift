@@ -22,7 +22,6 @@ struct CityListView: View {
         }
         .listStyle(.plain)
         .background(colorTheme.background_1)
-        .scrollContentBackground(.hidden)
 
 //        .toolbar {
 //            ToolbarItem {

@@ -12,31 +12,21 @@ struct ContentView: View {
     @State private var colorTheme: ColorTheme = .mono
 
     var body: some View {
-        ZStack {
-            colorTheme.background_1
-                .ignoresSafeArea()
-
-            VStack {
-                CityListView(colorTheme: $colorTheme)
-            }
-
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        isSettingViewPresented.toggle()
-                    }) {
-                        Text("Setting")
-                            .foregroundColor(.blue)
-                            .padding()
+        NavigationStack {
+            CityListView(colorTheme: $colorTheme)
+                .navigationTitle("City")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("Setting") {
+                            isSettingViewPresented.toggle()
+                        }
+                        .fontWeight(.bold)
+                        .foregroundColor(colorTheme.text_accent_1)
+                        .sheet(isPresented: $isSettingViewPresented) {
+                            SettingView(colorTheme: $colorTheme)
+                        }
                     }
                 }
-
-                Spacer()
-            }
-        }
-        .sheet(isPresented: $isSettingViewPresented) {
-            SettingView(colorTheme: $colorTheme)
         }
     }
 }
