@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EE0DF112A667B00002B322F /* ThemeChangeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF102A667B00002B322F /* ThemeChangeAppApp.swift */; };
+		3EE0DF132A667B00002B322F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF122A667B00002B322F /* ContentView.swift */; };
+		3EE0DF152A667B01002B322F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0DF142A667B01002B322F /* Assets.xcassets */; };
+		3EE0DF182A667B01002B322F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0DF172A667B01002B322F /* Preview Assets.xcassets */; };
+		3EE0DF222A667B01002B322F /* ThemeChangeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF212A667B01002B322F /* ThemeChangeAppTests.swift */; };
+		3EE0DF2C2A667B01002B322F /* ThemeChangeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF2B2A667B01002B322F /* ThemeChangeAppUITests.swift */; };
+		3EE0DF2E2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF2D2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EE0DF1E2A667B01002B322F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EE0DF052A667B00002B322F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE0DF0C2A667B00002B322F;
+			remoteInfo = ThemeChangeApp;
+		};
+		3EE0DF282A667B01002B322F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EE0DF052A667B00002B322F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE0DF0C2A667B00002B322F;
+			remoteInfo = ThemeChangeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EE0DF0D2A667B00002B322F /* ThemeChangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeChangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE0DF102A667B00002B322F /* ThemeChangeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeAppApp.swift; sourceTree = "<group>"; };
+		3EE0DF122A667B00002B322F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3EE0DF142A667B01002B322F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE0DF172A667B01002B322F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3EE0DF1D2A667B01002B322F /* ThemeChangeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeChangeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE0DF212A667B01002B322F /* ThemeChangeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeAppTests.swift; sourceTree = "<group>"; };
+		3EE0DF272A667B01002B322F /* ThemeChangeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeChangeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE0DF2B2A667B01002B322F /* ThemeChangeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeAppUITests.swift; sourceTree = "<group>"; };
+		3EE0DF2D2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EE0DF0A2A667B00002B322F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE0DF1A2A667B01002B322F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE0DF242A667B01002B322F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EE0DF042A667B00002B322F = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF0F2A667B00002B322F /* ThemeChangeApp */,
+				3EE0DF202A667B01002B322F /* ThemeChangeAppTests */,
+				3EE0DF2A2A667B01002B322F /* ThemeChangeAppUITests */,
+				3EE0DF0E2A667B00002B322F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EE0DF0E2A667B00002B322F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF0D2A667B00002B322F /* ThemeChangeApp.app */,
+				3EE0DF1D2A667B01002B322F /* ThemeChangeAppTests.xctest */,
+				3EE0DF272A667B01002B322F /* ThemeChangeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EE0DF0F2A667B00002B322F /* ThemeChangeApp */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF102A667B00002B322F /* ThemeChangeAppApp.swift */,
+				3EE0DF122A667B00002B322F /* ContentView.swift */,
+				3EE0DF142A667B01002B322F /* Assets.xcassets */,
+				3EE0DF162A667B01002B322F /* Preview Content */,
+			);
+			path = ThemeChangeApp;
+			sourceTree = "<group>";
+		};
+		3EE0DF162A667B01002B322F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF172A667B01002B322F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EE0DF202A667B01002B322F /* ThemeChangeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF212A667B01002B322F /* ThemeChangeAppTests.swift */,
+			);
+			path = ThemeChangeAppTests;
+			sourceTree = "<group>";
+		};
+		3EE0DF2A2A667B01002B322F /* ThemeChangeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF2B2A667B01002B322F /* ThemeChangeAppUITests.swift */,
+				3EE0DF2D2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift */,
+			);
+			path = ThemeChangeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EE0DF0C2A667B00002B322F /* ThemeChangeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE0DF312A667B01002B322F /* Build configuration list for PBXNativeTarget "ThemeChangeApp" */;
+			buildPhases = (
+				3EE0DF092A667B00002B322F /* Sources */,
+				3EE0DF0A2A667B00002B322F /* Frameworks */,
+				3EE0DF0B2A667B00002B322F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThemeChangeApp;
+			productName = ThemeChangeApp;
+			productReference = 3EE0DF0D2A667B00002B322F /* ThemeChangeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EE0DF1C2A667B01002B322F /* ThemeChangeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE0DF342A667B01002B322F /* Build configuration list for PBXNativeTarget "ThemeChangeAppTests" */;
+			buildPhases = (
+				3EE0DF192A667B01002B322F /* Sources */,
+				3EE0DF1A2A667B01002B322F /* Frameworks */,
+				3EE0DF1B2A667B01002B322F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EE0DF1F2A667B01002B322F /* PBXTargetDependency */,
+			);
+			name = ThemeChangeAppTests;
+			productName = ThemeChangeAppTests;
+			productReference = 3EE0DF1D2A667B01002B322F /* ThemeChangeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EE0DF262A667B01002B322F /* ThemeChangeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE0DF372A667B01002B322F /* Build configuration list for PBXNativeTarget "ThemeChangeAppUITests" */;
+			buildPhases = (
+				3EE0DF232A667B01002B322F /* Sources */,
+				3EE0DF242A667B01002B322F /* Frameworks */,
+				3EE0DF252A667B01002B322F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EE0DF292A667B01002B322F /* PBXTargetDependency */,
+			);
+			name = ThemeChangeAppUITests;
+			productName = ThemeChangeAppUITests;
+			productReference = 3EE0DF272A667B01002B322F /* ThemeChangeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EE0DF052A667B00002B322F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3EE0DF0C2A667B00002B322F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3EE0DF1C2A667B01002B322F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3EE0DF0C2A667B00002B322F;
+					};
+					3EE0DF262A667B01002B322F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3EE0DF0C2A667B00002B322F;
+					};
+				};
+			};
+			buildConfigurationList = 3EE0DF082A667B00002B322F /* Build configuration list for PBXProject "ThemeChangeApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EE0DF042A667B00002B322F;
+			productRefGroup = 3EE0DF0E2A667B00002B322F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EE0DF0C2A667B00002B322F /* ThemeChangeApp */,
+				3EE0DF1C2A667B01002B322F /* ThemeChangeAppTests */,
+				3EE0DF262A667B01002B322F /* ThemeChangeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EE0DF0B2A667B00002B322F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE0DF182A667B01002B322F /* Preview Assets.xcassets in Resources */,
+				3EE0DF152A667B01002B322F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE0DF1B2A667B01002B322F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE0DF252A667B01002B322F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EE0DF092A667B00002B322F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE0DF132A667B00002B322F /* ContentView.swift in Sources */,
+				3EE0DF112A667B00002B322F /* ThemeChangeAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE0DF192A667B01002B322F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE0DF222A667B01002B322F /* ThemeChangeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE0DF232A667B01002B322F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE0DF2E2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift in Sources */,
+				3EE0DF2C2A667B01002B322F /* ThemeChangeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EE0DF1F2A667B01002B322F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE0DF0C2A667B00002B322F /* ThemeChangeApp */;
+			targetProxy = 3EE0DF1E2A667B01002B322F /* PBXContainerItemProxy */;
+		};
+		3EE0DF292A667B01002B322F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE0DF0C2A667B00002B322F /* ThemeChangeApp */;
+			targetProxy = 3EE0DF282A667B01002B322F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3EE0DF2F2A667B01002B322F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EE0DF302A667B01002B322F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EE0DF322A667B01002B322F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThemeChangeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = CH9GHVXXU9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.13an.ThemeChangeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EE0DF332A667B01002B322F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThemeChangeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = CH9GHVXXU9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.13an.ThemeChangeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3EE0DF352A667B01002B322F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CH9GHVXXU9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.13an.ThemeChangeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThemeChangeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThemeChangeApp";
+			};
+			name = Debug;
+		};
+		3EE0DF362A667B01002B322F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CH9GHVXXU9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.13an.ThemeChangeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThemeChangeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThemeChangeApp";
+			};
+			name = Release;
+		};
+		3EE0DF382A667B01002B322F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CH9GHVXXU9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.13an.ThemeChangeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThemeChangeApp;
+			};
+			name = Debug;
+		};
+		3EE0DF392A667B01002B322F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CH9GHVXXU9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.13an.ThemeChangeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThemeChangeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EE0DF082A667B00002B322F /* Build configuration list for PBXProject "ThemeChangeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE0DF2F2A667B01002B322F /* Debug */,
+				3EE0DF302A667B01002B322F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE0DF312A667B01002B322F /* Build configuration list for PBXNativeTarget "ThemeChangeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE0DF322A667B01002B322F /* Debug */,
+				3EE0DF332A667B01002B322F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE0DF342A667B01002B322F /* Build configuration list for PBXNativeTarget "ThemeChangeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE0DF352A667B01002B322F /* Debug */,
+				3EE0DF362A667B01002B322F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE0DF372A667B01002B322F /* Build configuration list for PBXNativeTarget "ThemeChangeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE0DF382A667B01002B322F /* Debug */,
+				3EE0DF392A667B01002B322F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EE0DF052A667B00002B322F /* Project object */;
+}
