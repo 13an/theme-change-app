@@ -9,20 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isSettingViewPresented = false
-    @State private var colorTheme: ColorTheme = .simpleMono
+    @State private var colorTheme: ColorTheme = .mono
 
     var body: some View {
         ZStack {
-            colorTheme.backgroundColor
+            colorTheme.background_1
                 .ignoresSafeArea()
 
             VStack {
-                Text("Hello World")
-                    .foregroundColor(colorTheme.textColor)
-                    .font(.title)
-                    .padding()
-
-                Spacer()
+                CityListView(colorTheme: $colorTheme)
             }
 
             VStack {

@@ -14,8 +14,8 @@ struct SettingView: View {
     var body: some View {
         VStack {
             Picker("Color Theme", selection: $colorTheme) {
-                Text("Light").tag(ColorTheme.simpleMono)
-                Text("Dark").tag(ColorTheme.vividOrange)
+                Text("Light").tag(ColorTheme.mono)
+                Text("Dark").tag(ColorTheme.orange)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
@@ -30,34 +30,14 @@ struct SettingView: View {
                     .padding()
             }
         }
-        .background(colorTheme.backgroundColor)
+        .background(colorTheme.background_1)
     }
 }
 
-enum ColorTheme {
-    case simpleMono, vividOrange
 
-    var backgroundColor: Color {
-        switch self {
-        case .simpleMono:
-            return .white
-        case .vividOrange:
-            return .black
-        }
-    }
-
-    var textColor: Color {
-        switch self {
-        case .simpleMono:
-            return .black
-        case .vividOrange:
-            return .white
-        }
-    }
-}
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView(colorTheme: .constant(.simpleMono))
+        SettingView(colorTheme: .constant(.mono))
     }
 }
