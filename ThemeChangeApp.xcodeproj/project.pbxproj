@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EE0DF112A667B00002B322F /* ThemeChangeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF102A667B00002B322F /* ThemeChangeAppApp.swift */; };
+		3EE0DF112A667B00002B322F /* ThemeChangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF102A667B00002B322F /* ThemeChangeApp.swift */; };
 		3EE0DF132A667B00002B322F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF122A667B00002B322F /* ContentView.swift */; };
 		3EE0DF152A667B01002B322F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0DF142A667B01002B322F /* Assets.xcassets */; };
 		3EE0DF182A667B01002B322F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0DF172A667B01002B322F /* Preview Assets.xcassets */; };
 		3EE0DF222A667B01002B322F /* ThemeChangeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF212A667B01002B322F /* ThemeChangeAppTests.swift */; };
 		3EE0DF2C2A667B01002B322F /* ThemeChangeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF2B2A667B01002B322F /* ThemeChangeAppUITests.swift */; };
 		3EE0DF2E2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF2D2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift */; };
+		3EE0DF3D2A668FE4002B322F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF3C2A668FE4002B322F /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		3EE0DF0D2A667B00002B322F /* ThemeChangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeChangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EE0DF102A667B00002B322F /* ThemeChangeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeAppApp.swift; sourceTree = "<group>"; };
+		3EE0DF102A667B00002B322F /* ThemeChangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeApp.swift; sourceTree = "<group>"; };
 		3EE0DF122A667B00002B322F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3EE0DF142A667B01002B322F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EE0DF172A667B01002B322F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		3EE0DF272A667B01002B322F /* ThemeChangeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeChangeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE0DF2B2A667B01002B322F /* ThemeChangeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeAppUITests.swift; sourceTree = "<group>"; };
 		3EE0DF2D2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3EE0DF3C2A668FE4002B322F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +96,11 @@
 		3EE0DF0F2A667B00002B322F /* ThemeChangeApp */ = {
 			isa = PBXGroup;
 			children = (
-				3EE0DF102A667B00002B322F /* ThemeChangeAppApp.swift */,
+				3EE0DF102A667B00002B322F /* ThemeChangeApp.swift */,
 				3EE0DF122A667B00002B322F /* ContentView.swift */,
 				3EE0DF142A667B01002B322F /* Assets.xcassets */,
 				3EE0DF162A667B01002B322F /* Preview Content */,
+				3EE0DF3C2A668FE4002B322F /* SettingView.swift */,
 			);
 			path = ThemeChangeApp;
 			sourceTree = "<group>";
@@ -257,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE0DF3D2A668FE4002B322F /* SettingView.swift in Sources */,
 				3EE0DF132A667B00002B322F /* ContentView.swift in Sources */,
-				3EE0DF112A667B00002B322F /* ThemeChangeAppApp.swift in Sources */,
+				3EE0DF112A667B00002B322F /* ThemeChangeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isSettingViewPresented = false
+    @State private var colorTheme: ColorTheme = .simpleMono
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            colorTheme.backgroundColor
+                .ignoresSafeArea()
+
+            VStack {
+                Text("Hello World")
+                    .foregroundColor(colorTheme.textColor)
+                    .font(.title)
+                    .padding()
+
+                Spacer()
+            }
+
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        isSettingViewPresented.toggle()
+                    }) {
+                        Text("Setting")
+                            .foregroundColor(.blue)
+                            .padding()
+                    }
+                }
+
+                Spacer()
+            }
         }
-        .padding()
+        .sheet(isPresented: $isSettingViewPresented) {
+            SettingView(colorTheme: $colorTheme)
+        }
     }
 }
 
@@ -24,3 +51,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
