@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ThemeChangeApp: App {
+    @AppStorage(wrappedValue: 0, "appearanceMode") var appearanceMode
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .applyAppearenceSetting(AppearanceModeSetting(rawValue: self.appearanceMode) ?? .followSystem)
         }
     }
 }

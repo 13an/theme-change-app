@@ -11,6 +11,7 @@ struct SettingView: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var colorTheme: ColorTheme
     @State private var selectedLanguageIndex = 0
+    @AppStorage(wrappedValue: 0, "appearanceMode") var appearanceMode
 
     var body: some View {
         NavigationView {
@@ -27,8 +28,21 @@ struct SettingView: View {
                         .padding()
                     }
                     .listRowBackground(colorTheme.surface_1)
-                    .foregroundColor(colorTheme.text_base_2)
+                    Section("Appearance") {
+                        Picker("Appearance", selection: $appearanceMode) {
+                            Text("Follow system")
+                                .tag(0)
+                            Text("Dark mode")
+                                .tag(1)
+                            Text("Light mode")
+                                .tag(2)
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .padding()
+                    }
+                    .listRowBackground(colorTheme.surface_1)
                 }
+                .foregroundColor(colorTheme.text_base_2)
                 .scrollContentBackground(.hidden)
                 
                 Spacer()
@@ -49,6 +63,28 @@ struct SettingView: View {
     }
 }
 
+enum AppearanceModeSetting: Int {
+    case followSystem = 0
+    case darkMode = 1
+    case lightMode = 2
+}
+
+extension View {
+    @ViewBuilder
+    func applyAppearenceSetting(_ setting: AppearanceModeSetting) -> some View {
+        switch setting {
+        case .followSystem:
+            self
+                .preferredColorScheme(.none)
+        case .darkMode:
+            self
+                .preferredColorScheme(.dark)
+        case .lightMode:
+            self
+                .preferredColorScheme(.light)
+        }
+    }
+}
 
 
 struct SettingView_Previews: PreviewProvider {
