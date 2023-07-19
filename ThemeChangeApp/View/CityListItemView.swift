@@ -10,6 +10,7 @@ import SwiftUI
 struct CityListItemView: View {
     @EnvironmentObject var cityModel: CityModel
     @Binding var colorTheme: ColorTheme
+    @State private var selectedLanguageIndex = 0
 
     var city: City
     
@@ -36,9 +37,14 @@ struct CityListItemView: View {
 
 struct CityListItemView_Previews: PreviewProvider {
     static let cityModel = CityModel()
-    
+
     static var previews: some View {
-        CityListItemView(colorTheme: .constant(.mono), city: cityModel.cities[0])
-            .environmentObject(cityModel)
+        let localizationIds = ["en", "ja", "de"]
+        ForEach(localizationIds, id: \.self) { id in
+            CityListItemView(colorTheme: .constant(.mono), city: cityModel.cities[0])
+                .previewDisplayName("Localized - \(id)")
+                .environment(\.locale, .init(identifier: id))
+                .environmentObject(cityModel)
+        }
     }
 }

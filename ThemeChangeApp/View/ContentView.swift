@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isSettingViewPresented = false
     @State private var colorTheme: ColorTheme = .mono
+    @State private var selectedLanguageIndex = 0
 
     var body: some View {
         NavigationStack {
@@ -33,7 +34,12 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let localizationIds = ["en", "ja", "de"]
+        ForEach(localizationIds, id: \.self) { id in
+            ContentView()
+                .previewDisplayName("Localized - \(id)")
+                .environment(\.locale, .init(identifier: id))
+        }
     }
 }
 

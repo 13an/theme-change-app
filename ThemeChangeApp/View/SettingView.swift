@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingView: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var colorTheme: ColorTheme
+    @State private var selectedLanguageIndex = 0
 
     var body: some View {
         NavigationView {
@@ -39,6 +40,7 @@ struct SettingView: View {
                         .foregroundColor(colorTheme.text_accent_1)
                         .padding()
                 }
+                .fontWeight(.bold)
             }
             .background(colorTheme.background_1)
             .navigationTitle("Setting")
@@ -51,6 +53,11 @@ struct SettingView: View {
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView(colorTheme: .constant(.terminal))
+        let localizationIds = ["en", "ja", "de"]
+        ForEach(localizationIds, id: \.self) { id in
+            SettingView(colorTheme: .constant(.terminal))
+                .previewDisplayName("Localized - \(id)")
+                .environment(\.locale, .init(identifier: id))
+        }
     }
 }

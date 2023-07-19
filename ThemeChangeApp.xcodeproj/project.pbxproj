@@ -19,6 +19,7 @@
 		3EE0DF412A66CFAF002B322F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF402A66CFAF002B322F /* City.swift */; };
 		3EE0DF432A66D124002B322F /* CityListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF422A66D124002B322F /* CityListItemView.swift */; };
 		3EE0DF452A66D768002B322F /* CityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0DF442A66D768002B322F /* CityListView.swift */; };
+		3EE0DF4F2A67D03D002B322F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0DF512A67D03D002B322F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		3EE0DF402A66CFAF002B322F /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		3EE0DF422A66D124002B322F /* CityListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListItemView.swift; sourceTree = "<group>"; };
 		3EE0DF442A66D768002B322F /* CityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListView.swift; sourceTree = "<group>"; };
+		3EE0DF502A67D03D002B322F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3EE0DF522A67D040002B322F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3EE0DF532A67D040002B322F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				3EE0DF102A667B00002B322F /* ThemeChangeApp.swift */,
-				3EE0DF122A667B00002B322F /* ContentView.swift */,
-				3EE0DF142A667B01002B322F /* Assets.xcassets */,
+				3EE0DF4B2A67C92F002B322F /* View */,
+				3EE0DF4A2A67C920002B322F /* Model */,
+				3EE0DF4C2A67C947002B322F /* Extension */,
+				3EE0DF542A67D898002B322F /* Assets */,
 				3EE0DF162A667B01002B322F /* Preview Content */,
-				3EE0DF3C2A668FE4002B322F /* SettingView.swift */,
-				3EE0DF3E2A669624002B322F /* Color.swift */,
-				3EE0DF402A66CFAF002B322F /* City.swift */,
-				3EE0DF422A66D124002B322F /* CityListItemView.swift */,
-				3EE0DF442A66D768002B322F /* CityListView.swift */,
 			);
 			path = ThemeChangeApp;
 			sourceTree = "<group>";
@@ -140,6 +141,42 @@
 				3EE0DF2D2A667B01002B322F /* ThemeChangeAppUITestsLaunchTests.swift */,
 			);
 			path = ThemeChangeAppUITests;
+			sourceTree = "<group>";
+		};
+		3EE0DF4A2A67C920002B322F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF402A66CFAF002B322F /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EE0DF4B2A67C92F002B322F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF122A667B00002B322F /* ContentView.swift */,
+				3EE0DF422A66D124002B322F /* CityListItemView.swift */,
+				3EE0DF442A66D768002B322F /* CityListView.swift */,
+				3EE0DF3C2A668FE4002B322F /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EE0DF4C2A67C947002B322F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF3E2A669624002B322F /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3EE0DF542A67D898002B322F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3EE0DF142A667B01002B322F /* Assets.xcassets */,
+				3EE0DF512A67D03D002B322F /* Localizable.strings */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +265,8 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				ja,
 			);
 			mainGroup = 3EE0DF042A667B00002B322F;
 			productRefGroup = 3EE0DF0E2A667B00002B322F /* Products */;
@@ -247,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EE0DF182A667B01002B322F /* Preview Assets.xcassets in Resources */,
+				3EE0DF4F2A67D03D002B322F /* Localizable.strings in Resources */,
 				3EE0DF152A667B01002B322F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +353,19 @@
 			targetProxy = 3EE0DF282A667B01002B322F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EE0DF512A67D03D002B322F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE0DF502A67D03D002B322F /* en */,
+				3EE0DF522A67D040002B322F /* de */,
+				3EE0DF532A67D040002B322F /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3EE0DF2F2A667B01002B322F /* Debug */ = {
@@ -443,6 +496,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,6 +526,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

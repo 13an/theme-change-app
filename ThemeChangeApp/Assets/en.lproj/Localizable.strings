@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  ThemeChangeApp
+
+  Created by 13an on 2023/07/19.
+  
+*/
+
+"City" = "City";
+"Setting" = "Setting";
+"Color Theme" = "Color Theme";
+"Mono" = "Mono";
+"Orange" = "Orange";
+"Terminal" = "Terminal";
+"Close" = "Close";
+
+"Kyoto" = "Kyoto";
+"Osaka" = "Osaka";
+"San Francisco" = "San Francisco";
+"Tokyo" = "Tokyo";
+"Paris" = "Paris";
+"Berlin" = "Berlin";
+"Sao Paulo" = "Sao Paulo";

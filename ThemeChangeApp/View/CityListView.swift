@@ -10,7 +10,7 @@ import SwiftUI
 struct CityListView: View {
     @ObservedObject var cityModel = CityModel()
     @Binding var colorTheme: ColorTheme
-    
+    @State private var selectedLanguageIndex = 0
     @State private var isSettingViewPresented = false
     
     var body: some View {
@@ -22,23 +22,16 @@ struct CityListView: View {
         }
         .listStyle(.plain)
         .background(colorTheme.background_1)
-
-//        .toolbar {
-//            ToolbarItem {
-//                Button(action: {
-//                    isSettingViewPresented.toggle()
-//                }) {
-//                    Text("Setting")
-//                        .foregroundColor(.blue)
-//                        .padding()
-//                }
-//            }
-//        }
     }
 }
 
 struct CityListView_Previews: PreviewProvider {
     static var previews: some View {
-        CityListView(colorTheme: .constant(.orange))
+        let localizationIds = ["en", "ja", "de"]
+        ForEach(localizationIds, id: \.self) { id in
+            CityListView(colorTheme: .constant(.terminal))
+                .previewDisplayName("Localized - \(id)")
+                .environment(\.locale, .init(identifier: id))
+        }
     }
 }
